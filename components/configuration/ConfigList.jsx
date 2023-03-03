@@ -109,7 +109,7 @@ function App() {
         <br />
         <YoButton
             importId="${configurationData.importerId}"
-            yoHostUrl={"http://localhost:5050"}
+            yoHostUrl={''}
         />
     </div>
     );
@@ -227,11 +227,10 @@ export default App;`);
                 type="text"
                 id="default-input"
                 className={`border border-gray-200 text-gray-400  text-sm rounded-lg
-                    focus:ring-blue-500 focus:border-blue-500 block w-full 
+                    focus:ring-blue-500 focus:border-blue-500 block w-full
                     p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
-                    dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
-                      !importerName && 'border-red-400'
-                    }`}
+                    dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ${!importerName && 'border-red-400'
+                  }`}
                 value={importerName}
                 placeholder={'Enter Your Importer Name'}
                 onChange={(e) => {
